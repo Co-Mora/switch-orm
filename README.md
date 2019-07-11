@@ -44,17 +44,20 @@ const con = new SwitchOrm(dbName, username, password, {
 CREATE a Model to Initial tables in the Database
 
 ```Node
-const customer = new Model(tableName).create({
+const customer = new Model(tableName).define({
   name: Number,
   email: String,
   transactionID: String,
   addressData: String,
-  })
+});
 ```
-<!-- 
-## Deployment
 
-Add additional notes about how to deploy this on a live system -->
+## Example to fetch all data
+
+```Node
+  customer.findAll();
+```
+
 
 ## Built With
 

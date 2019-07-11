@@ -1,6 +1,6 @@
 var connection = require('../db/config/DB');
 
-export class SwitchOrm {
+class SwitchOrm {
 
     constructor(dbName, username, password, {dialect}) {
         this.dbName   = dbName;
@@ -9,6 +9,9 @@ export class SwitchOrm {
         this.dialect = dialect;
     }
     exec() {
-        new connection(this.dbName, this.username, this.password).init();
+        return new connection(this.dbName, this.username, this.password).init();
     }
 }
+
+
+module.exports = SwitchOrm;
