@@ -1,5 +1,5 @@
 const mysql = require('mysql');
-const con   = undefined;
+var con   = undefined;
 
 class DB {
     constructor(dbName, username, password) {
@@ -16,11 +16,9 @@ class DB {
             insecureAuth: true
         });
         var _delegateError = con._protocol._delegateError;
-
         con._protocol._delegateError = function (err, sequence) {
             if (err.fatal)
                 console.trace('MySQL fatal error: ' + err.message);
-
             return _delegateError.call(this, err, sequence);
         };
 
