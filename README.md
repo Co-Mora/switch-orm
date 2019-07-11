@@ -51,10 +51,10 @@ const customer = new Model(tableName).create({
   addressData: String,
   })
 ```
-
+<!-- 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Add additional notes about how to deploy this on a live system -->
 
 ## Built With
 
