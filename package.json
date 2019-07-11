@@ -1,0 +1,15 @@
+{
+  "name": "switch-orm",
+  "version": "1.0.1",
+  "description": "switch-orm is a promise-based Node.js ORM for MySQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "omardev",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.13",
+    "mysql": "^2.17.1"
+  }
+}
