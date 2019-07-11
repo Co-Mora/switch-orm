@@ -43,7 +43,7 @@ const con = new SwitchOrm(dbName, username, password, {
 
 CREATE a Model to Initial tables in the Database
 
-```
+```Node
 const customer = new Model(tableName).create({
   name: Number,
   email: String,
