@@ -27,7 +27,7 @@ End with an example of getting some data out of the system or using it for a lit
 
 <!-- ## Running the ORM
 
-<!-- Explain how to run the automated tests for this system --> -->
+<!-- Explain how to run the automated tests for this system -->
 
 ### Break down into end to end ORM
 
@@ -39,12 +39,17 @@ const con = new SwitchOrm(dbName, username, password, {
 }).exec();
 ```
 
-<!-- ### And coding style tests
+### And coding style tests
 
-Explain what these tests test and why -->
+CREATE a Model to Initial tables in the Database
 
 ```
-Give an example
+const customer = new Model(tableName).create({
+  name: Number,
+  email: String,
+  transactionID: String,
+  addressData: String,
+  })
 ```
 
 ## Deployment

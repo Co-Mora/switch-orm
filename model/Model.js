@@ -6,7 +6,7 @@ export class Model {
     constructor(tableName) {
         this.tableName = tableName;
     }
-    create(tableName, {}) {
+    create({}) {
 
         const query = `CREATE TABLE ${this.tableName} (name VARCHAR(255))`
         new connection().exec(query);
